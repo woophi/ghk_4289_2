@@ -77,7 +77,7 @@ export const App = () => {
         <img src={hb} alt="hb" width="100%" height={136} style={{ objectFit: 'cover', objectPosition: 'top' }} />
         <div className={appSt.box}>
           <Typography.TitleResponsive
-            style={{ maxWidth: '265px' }}
+            style={{ maxWidth: '250px' }}
             tag="h2"
             view="xsmall"
             color="primary-inverted"
@@ -117,7 +117,7 @@ export const App = () => {
 
       <div className={appSt.bottomBtn}>
         <ButtonMobile loading={loading} block view="primary" onClick={submit} hint="Итого: 349 ₽ в месяц">
-          Попробовать бесплатно
+          Подключить
         </ButtonMobile>
       </div>
     </>
