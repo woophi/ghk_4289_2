@@ -71,16 +71,7 @@ export const App = () => {
             view="primary-medium"
             color="secondary"
           >
-            Первый месяц — бесплатно.
-          </Typography.Text>
-          <Typography.Text
-            tag="p"
-            defaultMargins={false}
-            style={{ textAlign: 'center' }}
-            view="primary-medium"
-            color="secondary"
-          >
-            Далее 349 ₽ в месяц
+            Стоимость — 349 ₽ в месяц
           </Typography.Text>
         </div>
         <img src={hb} alt="hb" width="100%" height={136} style={{ objectFit: 'cover', objectPosition: 'top' }} />
@@ -93,7 +84,7 @@ export const App = () => {
             font="system"
             weight="semibold"
           >
-            Анализируйте тренды и улучшайте портфель с подпиской от Альфа-Инвестиции
+            Анализируйте рынок и улучшайте портфель
           </Typography.TitleResponsive>
         </div>
         <Typography.TitleResponsive tag="h3" view="small" font="system" weight="bold">
@@ -125,7 +116,7 @@ export const App = () => {
       <Gap size={96} />
 
       <div className={appSt.bottomBtn}>
-        <ButtonMobile loading={loading} block view="primary" onClick={submit}>
+        <ButtonMobile loading={loading} block view="primary" onClick={submit} hint="Итого: 349 ₽ в месяц">
           Попробовать бесплатно
         </ButtonMobile>
       </div>
