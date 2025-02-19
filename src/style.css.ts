@@ -15,17 +15,6 @@ const container = style({
   gap: '1rem',
 });
 
-const box = style({
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  textAlign: 'center',
-  flexDirection: 'column',
-  padding: '1rem',
-  borderRadius: '1rem',
-  background: 'linear-gradient(132.95deg, #FF5494 2.58%, #D46DFA 50%, #3193FC 97.42%)',
-});
-
 const row = style({
   display: 'flex',
   alignItems: 'center',
@@ -33,9 +22,47 @@ const row = style({
   padding: '1rem 0',
 });
 
+const firstBox = style({
+  height: '173px',
+  borderRadius: '24px',
+  backgroundColor: '#D8DAE4',
+  display: 'flex',
+  alignItems: 'flex-end',
+  textAlign: 'center',
+  position: 'relative',
+  paddingBottom: '12px',
+  justifyContent: 'center',
+});
+
+const secondBox = style({
+  position: 'absolute',
+  zIndex: 1,
+  top: 0,
+  left: 0,
+  backgroundColor: '#FFFFFF',
+  padding: '1rem 1rem 1.5rem',
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  justifyContent: 'center',
+  textAlign: 'center',
+  gap: '.5rem',
+  borderRadius: '24px',
+  width: '100%',
+});
+
+const img = style({
+  position: 'relative',
+  left: '50%',
+  transform: 'translate(-50%, 0)',
+  marginBottom: '-3rem',
+});
+
 export const appSt = {
   bottomBtn,
   container,
-  box,
+  firstBox,
+  secondBox,
+  img,
   row,
 };
